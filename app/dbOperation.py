@@ -1,5 +1,3 @@
-
-
 from pymongo.mongo_client import MongoClient
 
 client = None
