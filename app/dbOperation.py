@@ -1,4 +1,4 @@
-from pymongo.mongo_client import MongoClient
+from pymongo import MongoClient
 
 client = None
 connetion_error_str: str = None
