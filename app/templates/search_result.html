@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search_result.css')}}"
+</head>
+<body>
+    <div class="result-container">
+        {% for details in result %}
+            {% for key in details.keys() %}
+                <div class="card">
+                    {% if key == 'University' %}
+                        <div class="university-name">{{ details.get(key) }}</div>
+                        <span class="heading">{{ key }}</span>
+                    {% else %}
+                        <span class="key">{{ key }}</span>: {{ details.get(key) }}
+                    {% endif %}
+                </div>
+            {% endfor %}
+            <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>

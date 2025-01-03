@@ -1,0 +1,12 @@
+<header>
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link {% if home %}active{% endif %}">Home</a></li>
+            <li class="nav-item"><a href="{{ url_for('insert') }}" class="nav-link {% if insert %}active{% endif %}">Insert</a></li>
+            <li class="nav-item"><a href="{{ url_for('search') }} " class="nav-link {% if search %}active{% endif %}">Search</a></li>
+            <li class="nav-item"><a href=" {{ url_for('update') }} " class="nav-link {% if update %}active{% endif %}">Update</a></li>
+            <li class="nav-item"><a href=" {{ url_for('delete') }} " class="nav-link {% if delete %}active{% endif %}">Delete</a></li>
+        </ul>
+    </nav>
+    <hr style="clear:both">
+</header>

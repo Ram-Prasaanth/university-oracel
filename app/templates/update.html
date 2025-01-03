@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Update University Details{% endblock %}
+
+{% block content %}
+<div class="form-wrapper">
+<form action="/update-details" method="POST">
+    <label for="university-name">University Name</label>
+    <input type="text" id="university-name" name="university-name" placeholder="University Name" required> <br><br>
+
+    <!-- Container for dynamic fields -->
+    <div id="dynamic-fields" class="dynamic-fields">
+        <!-- Initial field set -->
+        <div class="field-set">
+            <div class="inline-fields">
+                <label for="title-name-1">Title</label>
+                <input list="titles" name="titles[]" id="title-name-1">
+
+                {% include 'include/datalist.html' %}
+
+                <label for="value-1" style="margin-left: 20px;">Value</label>
+                <input type="text" name="values[]" id="value-1">
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="add-btn" class="add-field-btn" onclick="addNewField()">+</button>
+    <button type="submit">Update</button>
+</form>
+</div>
+
+
+{% endblock %}

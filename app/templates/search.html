@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search University</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css' )}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css')}}">
+</head>
+<body>
+    {% include 'include/nav.html' %}
+    <div class="form-wrapper">
+    <form action="/results" method="POST" class="form-container" target="_blank">
+        <div id="search-container">
+            <h2>Search for</h2>
+            <div class="search-entry">
+                <label for="title-name-0">Title:</label>
+                <select name="search_titles[]" id="title-name-0">
+                    <option value="All">All</option>
+                    {% include 'include/select.html' %}
+                </select>
+                <label for="title-value-0">Value:</label>
+                <input type="text" name="search_values[]" id="title-value-0">
+            </div>
+        </div>
+        <button type="button" onclick="addSearchEntry()">Add Search</button>
+
+        <hr>
+
+        <div id="sort-container">
+            <h2>Sort on:</h2>
+            <div class="sort-entry">
+                <label for="sort-title-0">Title:</label>
+                <select name="sort_titles[]" id="sort-title-0">
+                    {% include 'include/select.html' %}
+                </select>
+                <label for="sort-value-0">Sort type:</label>
+                <select name="sort_values[]" id="sort-value-0">
+                    <option value="1">Ascending Order</option>
+                    <option value="-1">Descending Order</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" onclick="addSortEntry()">Add Sort</button>
+
+        <hr>
+        <button type="submit">Submit</button>
+    </form>
+   </div>
+    <script src="{{ url_for('static', filename='js/search.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Center the form without affecting the navbar */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Form Container - Keep the original styling */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1d3557;
+}
+
+/* Input and Select Styling */
+label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #457b9d;
+    box-shadow: 0 0 8px rgba(69, 123, 157, 0.4);
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Divider Styling */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #66a6ff, #89f7fe);
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Navbar - Ensure it remains sticky */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}

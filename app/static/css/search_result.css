@@ -1,0 +1,88 @@
+
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', Arial, sans-serif; /* Modern font for better readability */
+            background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+            margin: 0;
+            padding: 0;
+            color: #333; /* General text color */
+        }
+
+        /* Result Container Styling */
+        .result-container {
+            max-width: 900px;
+            margin: 40px auto; /* Center the container with space around */
+            background-color: #ffffff; /* White background for the content area */
+            padding: 30px; /* Generous padding for a clean look */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for a pop-out effect */
+        }
+
+        /* University Name Styling */
+        .university-name {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700; /* Bolder text */
+            font-style: italic;
+            color: #1a73e8; /* Vivid blue color */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+        }
+
+        /* Subheading (Heading) Styling */
+        .heading {
+            text-align: center;
+            font-size: 16px;
+            display: block;
+            color: #666; /* Neutral gray */
+            margin-bottom: 20px;
+            letter-spacing: 1px; /* Slight letter spacing for elegance */
+        }
+
+        /* Card Styling */
+        .card {
+            margin-bottom: 20px; /* Space between cards */
+            background-color: #f9f9f9; /* Light gray for card backgrounds */
+            padding: 15px;
+            border: 1px solid #ddd; /* Subtle border */
+            border-radius: 8px; /* Rounded corners for cards */
+            transition: transform 0.2s, box-shadow 0.2s; /* Add interactivity */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow enhancement on hover */
+        }
+
+        /* Key Styling */
+        .key {
+            font-size: 18px; /* Larger font size */
+            font-weight: bold;
+            color: #ff5722; /* Vibrant orange for keys */
+            margin-right: 5px;
+        }
+
+        /* Divider Styling */
+        hr {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ff8a00, #e52e71); /* Gradient divider */
+            margin: 20px 0; /* Space around dividers */
+            border-radius: 5px; /* Smooth edges */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .result-container {
+                padding: 20px; /* Reduce padding on smaller screens */
+            }
+
+            .key {
+                font-size: 16px; /* Adjust text size */
+            }
+
+            .university-name {
+                font-size: 22px; /* Scale down the university name */
+            }
+        }
+  

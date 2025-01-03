@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Warm gradient */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Wrapper to Center the Form */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Adjust height to avoid overlap with nav */
+    margin-top: 10px; /* Space from navbar */
+}
+
+/* Form Container Styling */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Input and Label Styling */
+label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+input[type="text"], input[list] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus, input[list]:focus {
+    outline: none;
+    border-color: #e63946;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.4);
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+    accent-color: #e63946; /* Modern browser support for custom checkbox colors */
+}
+
+/* Dynamic Fields Styling */
+.same-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.same-line label {
+    margin-right: 10px;
+}
+
+#dynamic-fields {
+    margin-top: 20px;
+}
+
+/* Button Styling */
+button {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #d62828;
+    transform: translateY(-2px);
+}
+
+button#add-btn {
+    background-color: #457b9d;
+    margin-left: 10px;
+}
+
+button#add-btn:hover {
+    background-color: #1d3557;
+}
+
+/* Navbar Fix */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}

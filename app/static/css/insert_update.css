@@ -1,0 +1,99 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085); /* Gradient background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering Wrapper for Form */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Adjust height to prevent overlap with nav */
+    margin-top: 10px; /* Space from navbar */
+}
+
+/* Form Container */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Input and Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333; /* Darker text color for contrast */
+}
+
+input[type="text"], input[list] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+input[type="text"]:focus, input[list]:focus {
+    outline: none;
+    border-color: #f77f00; /* Highlight color */
+    box-shadow: 0 0 8px rgba(247, 127, 0, 0.4); /* Glow effect */
+}
+
+/* Inline Fields Styling */
+.inline-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Space between elements */
+}
+
+/* Add Field Button */
+.add-field-btn {
+    background-color: #28a745; /* Green background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-field-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navbar Fix */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}

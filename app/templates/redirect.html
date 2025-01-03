@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/redirect.css')}}">
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <p>You will be redirected to <a href="{{ redirect_to }}" id="redirect-link">{{ redirect_to }}</a> in <span id="countdown">4</span> seconds.</p>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="{{ url_for('static', filename='js/redirect.js') }}"></script>
+</body>
+</html>
