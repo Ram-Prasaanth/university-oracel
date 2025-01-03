@@ -21,7 +21,8 @@ def connect_to_atlas_client():
         return client
     except Exception as e:
         print(e)
-        connetion_error_str = str(e)
+        global connetion_error_str 
+         connetion_error_str  = str(e)
 
 #local_database
 def get_client():
